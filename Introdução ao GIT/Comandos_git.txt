@@ -1,0 +1,64 @@
+Comandos prompt
+- dir				Traz a lista das pastas (diretórios) da pasta em que está situado
+- cd / 			Volta pra base
+- cd "nome da pasta"	Abre a pasta
+- cd..			Retrocede um nível na navegação
+- cls				Limpa a tela
+- "TAB"			Autocompleta o nome que está sendo digitado
+- mkdir "nome da pasta"	Make directory (Cria pasta)
+- echo "texto"		Imprime na tela o texto
+- echo ola > ola.txt	O sinal de maior significa que está pegando a saída da função e jogando para o arquivo indicado (redirecionador de fluxo)
+- del	"nome da pasta	deleta os arquivos dentro da pasta que eu informei, mas não a pasta
+- Seta pra cima		Navega pelo histórico de comandos
+- rmdir "nome da pasta"	/S /Q	Remove a pasta junto com os arquivos dela
+- openssl sha1 "arquivo"	
+- git hash-object --stdin	o stdin informa que a função espera um arquivo e o git hash é uma função do próprio git
+
+- blob (bolha, objeto, arquivo) - possui um sha1
+- tree (árvore, pasta) - possui outro sha1, se o blob muda, a árvore muda também
+- Commit é único para cada autor, e vários outros metadados
+
+token de acesso: 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
+
+- git init		- Inicializa um git - Cria um repositório dentro do diretório (pasta)
+- git add *		- move o arquivo untracked para staged
+- git commit -m	- Commita o arquivo
+- ls			- listar os arquivos
+- ls -a		- lista os arquivos+ arquivos ocultos
+- CTRL+L		- limpa tela
+- mv "arquivo" ./novo repositorio	- move
+- git config --global user.email "zecaivano@gmail.com"	- Configura meu email como autor
+- git config --global user.name Nemesis				- Configura seu nome de autor
+- git status
+- git config --list	- Lista todas as configurações do meu git
+- git remote add origin "link no github"	- Adiciona origem para enviar arquivo para github
+- git remote -v	lista repositórios no github
+- git push origin master	- envia arquivo para github
+- git pull origin master	- puxa o arquivo do github 
+- git clone "link"		- clona o arquivo na maquina
+- Untracked		git init não tem ciência deles (arquivos)
+- Tracked		git init tem ciência deles
+	- Unmodified Ao remove-lo volta pra untracked
+	- Modified	Ao editar o arquivo, muda o sha1 e passa de unmodified para modified. Se rodar o git add nele passa pra staged
+	- Staged	Tradução: atrás do palco, onde ficam os arquivos que estão se preparando para virar um commit. Ao dar commit num staged ele vira commit e retorna para unmodified. Tira um snapshot do arquivo naquele momento (após virar commit)
+- Ambiente de desenvolvimento:
+	- Working Directory
+	- Staging Area
+	- Local Repository: Quando faz um commit o arquivo passa a integrar o repositorio local que pode ser empurrado para um repositório remoto.
+- Servidor:
+	- Repositório remoto
+- Se contém o arquivo .git não é uma pasta comum e sim um repositório
+
+Arquivo no formato markdown:
+#texto	Formata em um tamanho maior
+##texto	Formata em um tamanho um pouco menor
+**texto**	Negrito
+_texto_	Itálico
+ - 		Marcador
+
+
+GIT - Separando o joio do trigo
+
+Acabei de finalizar o módulo de introdução ao GIT e digo: o que foi isso? Achei a metodologia bastante arcaica para simplesmente alterar projetos e jogá-los na nuvem apontando o histórico de autores/edições... Espero que com a interface gráfica fique mais intuitivo... Para leigos achei o conteúdo bem hardcore.
+Mas acho que esse módulo vem com o intuito de assustar mesmo, para separar o joio do trigo de quem quer realmente seguir esse caminho de se tornar um desenvolvedor.
+Quanto ao Perkles, o professor do curso, achei ele um gênio e bem calmo para explicar algo bem complicado de forma tão didática. Mas ao final do curso a gente sai com a sensação de que é bem mais prático fazer igual ao jornalista salvando o arquivo na nuvem do Google Drive com o nome projeto-versao-final-final, mesmo com todas as limitações que isso me traz. No fim das contas, acho que com a prática o GIT acaba se tornando bastante útil, só é mais difícil um pouco de ser dominado. Não me entendam mal, acho que o programa tem umas sacadas geniais tipo o uso do sha1... Só acho que poderia ser mais intuitivo.
