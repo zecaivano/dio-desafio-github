@@ -18,8 +18,6 @@ Comandos prompt
 - tree (árvore, pasta) - possui outro sha1, se o blob muda, a árvore muda também
 - Commit é único para cada autor, e vários outros metadados
 
-token de acesso: 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
-
 - git init		- Inicializa um git - Cria um repositório dentro do diretório (pasta)
 - git add *		- move o arquivo untracked para staged
 - git add -a/git add .	- O arquivo passa de untracked para verde (pronto para entrar no controle de versão).
