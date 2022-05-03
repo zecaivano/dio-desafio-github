@@ -54,10 +54,3 @@ Arquivo no formato markdown:
 **texto**	Negrito
 _texto_	Itálico
  - 		Marcador
-
-
-GIT - Separando o joio do trigo
-
-Acabei de finalizar o módulo de introdução ao GIT e digo: o que foi isso? Achei a metodologia bastante arcaica para simplesmente alterar projetos e jogá-los na nuvem apontando o histórico de autores/edições... Espero que com a interface gráfica fique mais intuitivo... Para leigos achei o conteúdo bem hardcore.
-Mas acho que esse módulo vem com o intuito de assustar mesmo, para separar o joio do trigo de quem quer realmente seguir esse caminho de se tornar um desenvolvedor.
-Quanto ao Perkles, o professor do curso, achei ele um gênio e bem calmo para explicar algo bem complicado de forma tão didática. Mas ao final do curso a gente sai com a sensação de que é bem mais prático fazer igual ao jornalista salvando o arquivo na nuvem do Google Drive com o nome projeto-versao-final-final, mesmo com todas as limitações que isso me traz. No fim das contas, acho que com a prática o GIT acaba se tornando bastante útil, só é mais difícil um pouco de ser dominado. Não me entendam mal, acho que o programa tem umas sacadas geniais tipo o uso do sha1... Só acho que poderia ser mais intuitivo.
